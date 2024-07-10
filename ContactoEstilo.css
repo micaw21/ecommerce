@@ -1,0 +1,263 @@
+@font-face {
+    font-family: simpleLemonade;
+    src: url("../assets/fonts/Simple\ Lemonade.otf");
+}
+
+body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+main{
+    flex: 1;
+}
+
+h1 {
+    font-family: simpleLemonade;
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+
+h2 {
+    font-family: 'Arial Black';
+    font-weight: bold;
+    font-size: 30px;
+    color: #C88EA7;
+    text-align: center;
+    margin-block: 30px;   
+}
+
+h3 {
+    text-align: center;
+}
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+/*Header*/
+header {
+    font-family: Verdana;
+    background-color: #C88EA7;
+    font-size: 20px;
+}
+
+.containerHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botonHeader {
+    width: 55px;
+    margin-right: 2px;
+    margin-top: 2px;
+    border: 1px solid black;
+}
+
+.botonHeader:hover {
+    background-color: #FF5BAE;
+}
+
+/*Estilo del Footer Navegacion*/
+.containerNavegacion {
+    background-color: #f0b8d1;
+    border-block: 2px solid #FF5BAE;
+}
+
+.iconsFooter {
+    width: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.textoInfo {
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.info {
+    font-family: sans-serif;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.click {
+    cursor: pointer;
+}
+
+.navegacion {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.infoNavegacion {
+    font-family: sans-serif;
+    font-size: 12px;
+    text-align: justify;
+    margin-left: 40%;
+    text-decoration: none;
+    color: black;
+}
+
+/* Footer */
+footer {
+    background-color: #E2F4C5;
+    text-align: center;
+    flex-shrink: 0;
+    padding-top: 10px;
+}
+
+.copyright {
+    font-size: 9px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Estilos del NavBar */
+.bienvenida {
+    text-align: center;
+    margin-block: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    background-color: #e1bbcc;
+}
+
+.nav {
+    margin-top: 2px;
+    margin-left: 3px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.nav:hover {
+    color: #FF5BAE;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.iconos {
+    width: 30px;
+    margin-right: 20px;
+}
+
+a:hover {
+    color: #FF5BAE;
+}
+
+.nav-link {
+    color: black;
+    font-size: 18px;
+}
+
+.logo {
+    padding: 20px;
+    width: 200px;
+}
+
+.lista-nav {
+    display: inline-flex;
+    list-style-type: none;
+    padding: 5px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #FF5BAE;
+}
+
+@media (min-width: 992px) and (max-width: 1028px) {
+    .nav-link {
+        text-align: center;
+    }
+
+    .lista-nav {
+        justify-content: space-around;
+    }
+}  
+
+
+/* Contacto */
+.container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #e1bbcc;
+    margin-block: 20px;
+    padding: 30px;
+    width: 50%;
+}
+
+@media (max-width: 900px) {
+    .container {
+        width: 90%;
+    }
+
+    .containerDatos {
+        width: 90%;
+    }
+}
+
+.containerInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.containerDatos {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #e1bbcc;
+    border-radius: 5px;
+    margin: 20px;
+    
+}
+
+.datosEmpresa {
+    margin-left: 20px;
+}
+
+.columna {
+    margin-block: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.botonEnviar {
+    background-color: #C88EA7;
+    border: 1px solid black;
+    color: black;
+    margin-block: 10px;
+}
+
+.botonEnviar:hover {
+    background-color: #FF5BAE;
+    color: black;
+    border: 2px solid black;
+
+}
+
+.tag {
+    margin-left: 10px;
+}
+
+

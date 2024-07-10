@@ -1,0 +1,300 @@
+@font-face {
+    font-family: simpleLemonade;
+    src: url("../assets/fonts/Simple\ Lemonade.otf");
+}
+
+@font-face {
+    font-family: louisGeorgeCafe;
+    src: url("../assets/fonts/Louis\ George\ Cafe.ttf");
+}
+
+@font-face {
+    font-family: midwatches;
+    src: url("../assets/fonts/MIDWATCHES.ttf");
+}
+
+@font-face {
+    font-family: redHands;
+    src: url("../assets/fonts/KGRedHands.ttf");
+}
+
+@font-face {
+    font-family: superCreamy;
+    src: url("../assets/fonts/Super\ Creamy\ Personal\ Use.ttf");
+}
+
+body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+main{
+    flex: 1;
+}
+
+h1 {
+    font-family: simpleLemonade;
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+
+h2 {
+    font-family: 'Arial Black';
+    font-weight: bold;
+    font-size: 30px;
+    color: #C88EA7;
+    text-align: center;
+    margin-block: 30px;   
+}
+
+h3 {
+    font-family: Verdana;
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+}
+
+/*Estilos del Header*/
+header {
+    font-family: Verdana;
+    background-color: #C88EA7;
+    font-size: 20px;
+}
+
+.containerHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botonHeader {
+    width: 55px;
+    margin-right: 2px;
+    margin-top: 2px;
+    border: 1px solid black;
+}
+
+.botonHeader:hover {
+    background-color: #FF5BAE;
+}
+
+/*Estilos del NavBar*/
+.bienvenida {
+    text-align: center;
+    margin-block: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    background-color: #e1bbcc;
+}
+
+.nav {
+    margin-top: 2px;
+    margin-left: 3px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.nav:hover {
+    color: #FF5BAE;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.iconos {
+    width: 30px;
+    margin-right: 20px;
+}
+
+.nav-link {
+    color: black;
+    font-size: 18px;
+}
+
+a:hover {
+    color: #FF5BAE;
+}
+
+.logo {
+    padding: 20px;
+    width: 200px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #FF5BAE;
+}
+.lista-nav {
+    display: inline-flex;
+    list-style-type: none;
+    padding: 5px;
+}
+
+@media (min-width: 992px) and (max-width: 1028px) {
+    .nav-link {
+        text-align: center;
+    }
+
+    .lista-nav {
+        justify-content: space-around;
+    }
+}  
+
+/*Estilo de la Compra*/
+.producto {
+    width: 350px;
+    height: 400px;
+    margin-bottom: 20px;
+    float: right;
+}
+
+.infoCompra {
+    text-align: justify;
+    border: 1px solid #C88EA7;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.titulo {
+    font-size: 25px;
+    font-family: louisGeorgeCafe;
+}
+
+.descuento {
+    margin-bottom: 50px;
+}
+
+.precio {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.agregarCarr {
+    background-color: #f0b8d1;
+    border: 1px solid black;
+    width: 200px;
+    margin-top: 50px;
+}
+
+.cancelar {
+    background-color: rgb(227, 101, 101);
+    border: 1px solid black;
+    width: 200px;
+    margin-top: 50px;
+}
+
+.agregarCarr:hover {
+    background-color: #C88EA7;
+    border: 2px solid black;
+}
+
+.cantidad {
+    width: 350px;
+}
+
+.columna {
+    margin-right: 20px;
+    
+}
+
+@media (max-width: 900px) {
+    .producto {
+        width: 350px;
+        height: 400px;
+        margin-bottom: 20px;
+        float: none;
+        margin-left: 50px;
+
+    }
+
+    .infoCompra {
+        margin-bottom: 50px;
+        margin-left: 20px;
+    }
+}
+
+/*Estilo del Footer Navegacion*/
+.containerNavegacion {
+    background-color: #f0b8d1;
+    border-block: 2px solid #FF5BAE;
+}
+
+.iconsFooter {
+    width: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.textoInfo {
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.info {
+    font-family: sans-serif;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.click {
+    cursor: pointer;
+}
+
+.navegacion {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.infoNavegacion {
+    font-family: sans-serif;
+    font-size: 12px;
+    text-align: justify;
+    margin-left: 40%;
+    text-decoration: none;
+    color: black;
+}
+
+/*Estilos del Footer*/
+footer {
+    background-color: #E2F4C5;
+    text-align: center;
+    flex-shrink: 0;
+    padding-top: 10px;
+}
+
+.copyright {
+    font-size: 9px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+

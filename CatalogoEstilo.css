@@ -1,0 +1,420 @@
+@font-face {
+    font-family: simpleLemonade;
+    src: url("../assets/fonts/Simple\ Lemonade.otf");
+}
+
+@font-face {
+    font-family: louisGeorgeCafe;
+    src: url("../assets/fonts/Louis\ George\ Cafe.ttf");
+}
+
+body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+main{
+    flex: 1;
+}
+
+h1 {
+    font-family: simpleLemonade;
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+
+h2 {
+    font-family: 'Arial Black';
+    font-weight: bold;
+    font-size: 30px;
+    color: #C88EA7;
+    text-align: center;
+    margin-block: 30px;   
+}
+
+h3 {
+    font-family: Verdana;
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+h4 {
+    font-family: verdana;
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+}
+
+/*Estilos del Header*/
+header {
+    font-family: Verdana;
+    background-color: #C88EA7;
+    font-size: 20px;
+}
+
+.containerHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botonHeader {
+    width: 55px;
+    margin-right: 2px;
+    margin-top: 2px;
+    border: 1px solid black;
+}
+
+.botonHeader:hover {
+    background-color: #FF5BAE;
+}
+
+
+/*Estilos del NavBar*/
+.bienvenida {
+    text-align: center;
+    margin-block: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    background-color: #e1bbcc;
+}
+
+.botones {
+    margin-top: 2px;
+    margin-left: 3px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.botones:hover {
+    color: #FF5BAE;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.iconos {
+    width: 30px;
+    margin-right: 20px;
+}
+
+.nav-link {
+    color: black;
+    font-size: 18px;
+}
+
+a:hover {
+    color: #FF5BAE;
+}
+
+.logo {
+    padding: 20px;
+    width: 200px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #FF5BAE;
+}
+.lista-nav {
+    display: inline-flex;
+    list-style-type: none;
+    padding: 5px;
+}
+
+@media (min-width: 992px) and (max-width: 1028px) {
+    .nav-link {
+        text-align: center;
+    }
+
+    .lista-nav {
+        justify-content: space-around;
+    }
+}  
+
+/*Estilo de banner*/
+.banner {
+    border-block: 1px solid black;
+}
+
+/*Estilos de la Grilla*/
+.tarjetaCuerpo {
+    text-align: center;
+    border-top: 1px solid black;
+    background-color: #dba9bf;
+}
+
+.texto {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-decoration: none;
+}
+
+.tarjeta {
+    width: 14rem;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 280px;
+}
+
+.cabecera {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    background-color: #f8cfe1;
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+.tabs {
+    margin-bottom: 30px;
+}
+
+.tab.active {
+    background-color: #dba9bf;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: underline;
+}
+
+.tab {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.tab:hover {
+    background-color: #FF5BAE;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.filtrarCategorias {
+    display: flex;
+    justify-content: center;
+}
+
+.btnCategorias {
+    background-color: #e1bbcc;
+    border-radius: 5px;
+}
+
+.btnVolver {
+    background-color: #e1bbcc;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.btnVolver:hover {
+    background-color: #dba9bf;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: underline;
+}
+
+.sinStock {
+    font-family: verdana;
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.columna {
+    margin-bottom: 20px;
+}
+
+.columna:hover > :not(:hover) {
+    transform: translateY(-8px);
+}
+
+.columna:hover {
+    transform: translateY(-5px);
+}
+
+.compra:hover {
+    font-weight: bolder;
+}
+
+.containerPrincipal {
+    margin-bottom: 20px;
+}
+
+@media (min-width: 996px) {
+    .containerPrincipal {
+        margin-inline: 100px;
+        margin-left: 160px;
+    }
+}
+
+@media (min-width: 996px) and (max-width: 1200px) {
+    .tarjetaCuerpo {
+        font-size: 12px;
+    }
+    
+    .tarjeta {
+        width: 12rem;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    
+    .card-img-top {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 995px) {
+    .tarjetaCuerpo {
+        font-size: 10px;
+    }
+
+    .tarjeta {
+        width: 10rem;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+    .card-img-top {
+        width: 100%;
+        height: 200px;
+    }
+
+    .containerPrincipal {
+        margin-inline: 90px;
+    }
+}
+
+@media (max-width: 768px) {
+    .containerPrincipal {
+        margin-inline: 35%;
+    }
+}
+
+@media (max-width: 574px) {
+    .containerPrincipal {
+        margin-inline: 25%;
+    }
+}
+
+@media (max-width: 707px) {
+    ul {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 534px) {
+    ul {
+        font-size: 8px;
+    }
+}
+
+@media (min-width: 990px) and (max-width: 1209px) {
+    .nav-link {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 990px) and (max-width: 1049px) {
+    .nav-link {
+        font-size: 13px;
+    }
+}
+
+/*Estilo del Footer Navegacion*/
+.containerNavegacion {
+    background-color: #f0b8d1;
+    border-block: 2px solid #FF5BAE;
+}
+
+.iconsFooter {
+    width: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.textoInfo {
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.info {
+    font-family: sans-serif;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.click {
+    cursor: pointer;
+}
+
+.navegacion {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.infoNavegacion {
+    font-family: sans-serif;
+    font-size: 12px;
+    text-align: justify;
+    margin-left: 40%;
+    text-decoration: none;
+    color: black;
+}
+
+/*Estilos del Footer*/
+
+footer {
+    background-color: #E2F4C5;
+    text-align: center;
+    flex-shrink: 0;
+    padding-top: 10px;
+}
+
+.copyright {
+    font-size: 9px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+/*Navegacion de Paginacion*/
+.paginacion {
+    display: flex;
+    justify-content: center;
+}
+.active > a.page-link {
+    background-color: #FF5BAE;
+    color: black;
+    border: 1px solid black;
+}
+
+.pagination .page-link {
+    color: black; 
+}
+
+
+
+

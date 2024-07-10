@@ -1,0 +1,294 @@
+@font-face {
+    font-family: simpleLemonade;
+    src: url("../assets/fonts/Simple\ Lemonade.otf");
+}
+
+body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+main{
+    flex: 1;
+}
+
+h1 {
+    font-family: simpleLemonade;
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+h2 {
+    font-family: 'Arial Black';
+    font-weight: bold;
+    font-size: 30px;
+    color: #C88EA7;
+    text-align: center;
+    margin-block: 30px;
+}
+
+h3 {
+    font-family: fantasy;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: #C88EA7;
+}
+
+h4 {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+/*Header 1*/
+header {
+    font-family: Verdana;
+    background-color: #C88EA7;
+    font-size: 20px;
+}
+
+.logo {
+    padding: 20px;
+    width: 200px;
+}
+
+.containerHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.botonMas {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.boton {
+    background-color: #C88EA7;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100px;
+}
+
+.link {
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.botonHeader {
+    width: 55px;
+    margin-right: 2px;
+    margin-top: 2px;
+    border: 1px solid black;
+}
+
+.botonHeader:hover {
+    background-color: #FF5BAE;
+}
+
+/*Estilos del NavBar*/
+.bienvenida {
+    text-align: center;
+    margin-block: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+
+.nav {
+    margin-top: 2px;
+    margin-left: 3px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.nav:hover {
+    color: #FF5BAE;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #FF5BAE;
+}
+
+.nav-link {
+    color: black;
+    font-size: 18px;
+}
+
+.iconos {
+    width: 30px;
+    margin-right: 20px;
+}
+
+a:hover {
+    color: #f0278c;
+}
+
+.lista-nav {
+    display: inline-flex;
+    list-style-type: none;
+    padding: 5px;
+}
+
+@media (min-width: 992px) and (max-width: 1028px) {
+    .nav-link {
+        text-align: center;
+    }
+
+    .lista-nav {
+        justify-content: space-around;
+    }
+}  
+
+/*Registro*/
+.container {
+    width: 50%;
+}
+
+@media (max-width: 900px) {
+    .container {
+        width: 100%;
+    }
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    border: 2px solid #C88EA7;
+}
+
+.input-group-text {
+    background-color: #f0b8d1;
+    border: 2px solid #C88EA7;
+}
+
+.botonRegistro {
+    border: 1px solid black;
+    margin-bottom: 50px;
+    background-color: #e1bbcc;
+    color: black;
+    margin-inline: 30px;
+}
+
+.botonRegistro:hover {
+    background-color: #FF5BAE;
+    border: 2px solid black;
+}
+
+.datosRequeridos {
+    font-size: 10px;
+}
+
+/*Estilos de Informacion*/
+.containerNavegacion {
+    background-color: #f0b8d1;
+    border-bottom: 2px solid #FF5BAE;
+}
+
+.containerInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-block: 2px solid #FF5BAE;
+    background-color: #e1bbcc;
+}
+
+.iconosInfo {
+    width: 50px;
+    margin-top: 10px;
+}
+
+.iconsFooter {
+    width: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.textoInfo {
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.info {
+    font-family: sans-serif;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.click {
+    cursor: pointer;
+}
+
+.navegacion {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.infoNavegacion {
+    font-family: sans-serif;
+    font-size: 12px;
+    text-align: justify;
+    margin-left: 40%;
+    text-decoration: none;
+    color: black;
+}
+
+/*Estilos del Footer*/
+footer {
+    background-color: #E2F4C5;
+    text-align: center;
+    flex-shrink: 0;
+    padding-top: 10px;
+}
+
+.copyright {
+    font-size: 9px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+/*Estilos de Errores*/
+.alert {
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

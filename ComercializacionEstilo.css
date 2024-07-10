@@ -1,0 +1,237 @@
+@font-face {
+    font-family: simpleLemonade;
+    src: url("../assets/fonts/Simple\ Lemonade.otf");
+}
+
+body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+main{
+    flex: 1;
+}
+
+h1 {
+    font-family: simpleLemonade;
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+h2 {
+    font-family: 'Arial Black';
+    font-weight: bold;
+    font-size: 30px;
+    color: #C88EA7;
+    text-align: center;
+    margin-block: 30px;
+}
+
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-block: 30px;
+    background-color: #C88EA7;
+    padding: 10px;
+    font-size: 20px;
+}
+
+h4 {
+    font-family: cursive;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+/*Estilo del Header*/
+header {
+    font-family: Verdana;
+    background-color: #C88EA7;
+    font-size: 20px;
+}
+
+.containerHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botonHeader {
+    width: 55px;
+    margin-right: 2px;
+    margin-top: 2px;
+    border: 1px solid black;
+}
+
+.botonHeader:hover {
+    background-color: #FF5BAE;
+}
+
+/* Estilos del NavBar */
+.bienvenida {
+    text-align: center;
+    margin-block: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    background-color: #e1bbcc;
+}
+
+.nav {
+    margin-top: 2px;
+    margin-left: 3px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.nav:hover {
+    color: #FF5BAE;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.iconos {
+    width: 30px;
+    margin-right: 20px;
+}
+
+.nav-link {
+    color: black;
+    font-size: 18px;
+}
+
+
+a:hover {
+    color: #FF5BAE;
+}
+
+.logo {
+    padding: 20px;
+    width: 200px;
+}
+
+.lista-nav {
+    display: inline-flex;
+    list-style-type: none;
+    padding: 5px;
+}
+
+@media (min-width: 992px) and (max-width: 1028px) {
+    .nav-link {
+        text-align: center;
+    }
+
+    .lista-nav {
+        justify-content: space-around;
+    }
+} 
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #FF5BAE;
+}
+
+/*Estilo del Footer Navegacion*/
+.containerNavegacion {
+    background-color: #f0b8d1;
+    border-block: 2px solid #FF5BAE;
+}
+
+.iconsFooter {
+    width: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.textoInfo {
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.info {
+    font-family: sans-serif;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.click {
+    cursor: pointer;
+}
+
+.navegacion {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.infoNavegacion {
+    font-family: sans-serif;
+    font-size: 12px;
+    text-align: justify;
+    margin-left: 40%;
+    text-decoration: none;
+    color: black;
+}
+
+/*Estilo del Footer*/
+footer {
+    background-color: #E2F4C5;
+    text-align: center;
+    flex-shrink: 0;
+    padding-top: 10px;
+}
+
+.copyright {
+    font-size: 9px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+/* Comercializacion */
+.informacion {
+    text-align: justify;
+    margin-inline: 30px;
+    font-size: 15px;
+}
+
+.entregas {
+    width: 400px;
+    margin-bottom: 10px;
+    border: 1px solid #C88EA7;
+}
+
+.envios {
+    width: 250px;
+    height: 100px;
+    border: 1px solid #C88EA7;
+    margin: 10px;
+}
+
+.tarjetas {
+    width: 150px;
+    height: 100px;
+    margin: 20px;
+    border: 1px solid #C88EA7;
+    padding: 1px;
+}
+
+.gridTarjetas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
